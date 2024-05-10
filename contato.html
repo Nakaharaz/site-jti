@@ -3,7 +3,7 @@
   <head>
     <!--====== Required meta tags ======-->
     <meta charset="utf-8" />
-    <meta name="description" content="Página não encontrada" />
+    <meta name="description" content="Página de contato da Suporte JTI" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
@@ -11,11 +11,11 @@
     />
 
     <!--====== Title ======-->
-    <title>Página não encontrada || Suporte JTI</title>
+    <title>Contato || Suporte JTI</title>
     <!--====== Favicon Icon ======-->
     <link
       rel="shortcut icon"
-      href="assets/images/favicon.png"
+      href="assets/images/favicon-jti.svg"
       type="image/x-icon"
     />
     <!--====== Google Fonts ======-->
@@ -273,15 +273,19 @@
       <!-- Page Banner Start -->
       <section
         class="page-banner bgs-cover overlay pt-50"
-        style="background-image: url(assets/images/hero/jti-solucoes-bg-4-1920-854.jpg)"
+        style="
+          background-image: url(assets/images/hero/jti-solucoes-bg-4-1920-854.jpg);
+        "
       >
         <div class="container">
           <div class="banner-inner">
-            <h1 class="page-title">Página não encontrada</h1>
+            <h1 class="page-title">Entre em contato</h1>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Suporte JTI</a></li>
-                <li class="breadcrumb-item active">Erro 404</li>
+                <li class="breadcrumb-item">
+                  <a href="index.html">Suporte JTI</a>
+                </li>
+                <li class="breadcrumb-item active">Contato</li>
               </ol>
             </nav>
           </div>
@@ -289,20 +293,131 @@
       </section>
       <!-- Page Banner End -->
 
-      <!-- Error Section Start -->
-      <section class="error-page text-center py-120 rpy-100">
+      <!-- Contact Section Start -->
+      <section class="contact-page py-120 rpy-100">
         <div class="container">
-          <div class="error-content">
-            <img src="assets/images/404.png" alt="404 Error" />
-            <h2>Oops! Página não encontrada.</h2>
-            <p>
-              Sentimos muito que você não encontrou o que precisava🙁<br> Tente voltar para nossa página inicial e começar novamente!
-            </p>
-            <a href="index.html" class="theme-btn mt-30">Início</a>
+          <div class="contact-info-area mb-80">
+            <div class="contact-info-item wow fadeInUp delay-0-2s">
+              <i class="far fa-map"></i>
+              <p>Avenida Maria Buzolin, 441, Jd. Piratininga . Limeira/SP</p>
+            </div>
+            <div class="contact-info-item wow fadeInUp delay-0-4s">
+              <i class="far fa-envelope"></i>
+              <p>
+                <a href="mailto:support@gmail.com">support@gmail.com</a>
+                <br /><a href="#">www.restly.net</a>
+              </p>
+            </div>
+            <div class="contact-info-item wow fadeInUp delay-0-6s">
+              <i class="fas fa-phone-alt"></i>
+              <p>
+                <a href="https://wa.me/551934410065">(19) 3441.0065</a><br />
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div
+                class="contact-form-left bgs-cover h-100 wow fadeInLeft delay-0-2s"
+                style="
+                  background-image: url(assets/images/contact/contact-page.jpg);
+                "
+              >
+                <h2>Entre em contato</h2>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div
+                class="contact-form ml-40 rml-0 rmt-55 wow fadeInRight delay-0-2s"
+              >
+                <h3 class="comment-title mb-35">Envie uma mensagem!</h3>
+                <p>
+                  A JTI oferece soluções completas para otimizar sua
+                  infraestrutura e te levar ao próximo nível! Entre em contato
+                  agora e agende uma avaliação gratuita!
+                </p>
+                <form
+                  id="comment-form"
+                  class="comment-form mt-35"
+                  name="comment-form"
+                  action="#"
+                  method="post"
+                >
+                  <div class="row clearfix justify-content-center">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="full-name"
+                          ><i class="far fa-user"></i
+                        ></label>
+                        <input
+                          type="text"
+                          id="full-name"
+                          name="full-name"
+                          class="form-control"
+                          value=""
+                          placeholder="Seu nome completo"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="email"
+                          ><i class="far fa-envelope"></i
+                        ></label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          class="form-control"
+                          value=""
+                          placeholder="Seu e-mail"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label for="message"
+                          ><i class="fas fa-pencil-alt"></i
+                        ></label>
+                        <textarea
+                          name="message"
+                          id="message"
+                          class="form-control"
+                          rows="4"
+                          placeholder="Escreva sua mensagem"
+                          required=""
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="form-group mb-0">
+                        <button type="submit" class="theme-btn">Enviar</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <!-- Error Section End -->
+      <!-- Contact Section End -->
+
+      <!--======== Map =========-->
+      <div class="contact-page-map">
+        <div class="our-location">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.5710762387225!2d-47.41582932384532!3d-22.557734825491217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8810a70b5884d%3A0xb8b92a93c465ae68!2sJTi%20Suporte%20em%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1715288629926!5m2!1spt-BR!2sbr"
+            height="650"
+            style="border: 0; width: 100%"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+      <!--======== Map =========-->
 
       <!-- Footer Area Start -->
       <footer class="main-footer footer-three bg-light-black text-white pt-90">
